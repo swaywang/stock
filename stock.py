@@ -3,7 +3,7 @@
 import urllib2, csv, random, logging, time
 url = 'http://mis.tse.com.tw/data/TSEIndex.csv?r=%s' % random.randrange(1,10000)
 
-stock_list = [3034, 2002, 5203, 2498, 3697, '0050', '3227']
+stock_list = ['0050', '3227']
 
 page = urllib2.urlopen(url)
 reader = csv.reader(page)
